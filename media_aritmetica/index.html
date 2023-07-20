@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora de Média Aritmética</title>
+</head>
+
+<body>
+
+    <!--Faça um programa JavaScript em que o
+         usuário informará 3 números e o programa calculará
+          a média aritmética desses números.-->
+          
+    <h1>Calculadora de Média Aritmética</h1>
+    <script>
+        // Função que calcula a média aritmética
+        function calcularMedia() {
+            // Obter os valores informados pelo usuário
+            var numero1 = parseFloat(prompt("Digite o primeiro número:"));
+            var numero2 = parseFloat(prompt("Digite o segundo número:"));
+            var numero3 = parseFloat(prompt("Digite o terceiro número:"));
+
+            // Calcular a média
+            var media = (numero1 + numero2 + numero3) / 3;
+
+            // Exibir o resultado
+            alert("A média aritmética é: " + media.toFixed(2));
+        }
+
+        // Chamar a função para iniciar o programa
+        calcularMedia();
+    </script>
+</body>
+
+
+</html>
