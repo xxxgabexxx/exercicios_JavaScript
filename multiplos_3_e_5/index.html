@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplos de 3 e 5 </title>
+</head>
+
+<body>
+
+    <script>
+
+        function sumMultiples(limit) {
+            let sum = 0;
+
+            for (let i = 1; i < limit; i++) {
+                if (i % 3 === 0 || i % 5 === 0) {
+                    sum += i;
+                }
+            }
+
+            return sum;
+        }
+
+        const limit = 1000;
+        const result = sumMultiples(limit);
+        console.log("A soma de todos os múltiplos de 3 ou 5 abaixo de", limit, "é:", result);
+
+    </script>
+
+
+</body>
+
+</html>
