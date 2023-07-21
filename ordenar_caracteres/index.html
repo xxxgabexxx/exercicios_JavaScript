@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        function ordenarSequencia() {
+            // Obter a sequência de caracteres do usuário
+            const sequenciaOriginal = prompt("Digite a sequência de caracteres:");
+
+            // Converter a sequência em uma matriz de caracteres
+            const caracteres = sequenciaOriginal.split("");
+
+            // Ordenar a matriz em ordem crescente
+            caracteres.sort();
+
+            // Criar a sequência ordenada a partir da matriz
+            const sequenciaOrdenada = caracteres.join("");
+
+            // Apresentar a sequência original e a sequência ordenada ao usuário
+            console.log("Sequência Original:", sequenciaOriginal);
+            console.log("Sequência Ordenada:", sequenciaOrdenada);
+
+            // Retornar a sequência ordenada (caso deseje utilizar posteriormente)
+            return sequenciaOrdenada;
+        }
+
+        // Chamar a função para testar
+        ordenarSequencia();
+
+
+    </script>
+
+</body>
+
+</html>
